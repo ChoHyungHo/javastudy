@@ -19,11 +19,15 @@ public class App {
         // // new_id = "z-+.^.";
         // System.out.println(solution.solution());
 
-        AdTimeSolution solution = new AdTimeSolution();
-        String play_time = "02:03:55";
-        String adv_time = "00:14:15";
-        String[] logs = {"01:20:15-01:45:14", "00:40:31-01:00:00", "00:25:50-00:48:29", "01:30:59-01:53:29", "01:37:44-02:02:30"};
-        // String result = "01:30:59";
-        System.out.println(solution.solution(play_time, adv_time, logs));
+        // AdTimeSolution solution = new AdTimeSolution();
+        // String play_time = "02:03:55";
+        // String adv_time = "00:14:15";
+        // String[] logs = {"01:20:15-01:45:14", "00:40:31-01:00:00", "00:25:50-00:48:29", "01:30:59-01:53:29", "01:37:44-02:02:30"};
+        // // String result = "01:30:59";
+        // System.out.println(solution.solution(play_time, adv_time, logs));
+
+        MissingElement solution = new MissingElement();
+        int[] A = {2, 3, 1, 5};
+        solution.solution(A);
     }
 }
