@@ -18,9 +18,9 @@ public class NumberCombinTest {
 
     @Test
     public void Test2(){
-        String numbers = "011";
+        String numbers = "17";
         int actual = solution.solution(numbers);
-        int expected = 2;
+        int expected = 1;
         // actual = expected;
         assertEquals(expected, actual);
     }

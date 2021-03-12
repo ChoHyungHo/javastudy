@@ -53,24 +53,7 @@ public class NumberCombin {
         }
     }
 
-    private boolean isPrime(int n) {
-        int i;
-		int sqrt = (int) Math.sqrt(n);
-
-		// 2는 유일한 짝수 소수
-		if (n == 2)
-			return true;
-
-		// 짝수와 1은 소수가 아님
-		if (n % 2 == 0 || n == 1)
-			return false;
-
-		// 제곱근까지만 홀수로 나눠보면 됨
-		for (i = 3; i <= sqrt; i += 2) {
-			if (n % i == 0)
-				return false;
-		}
-
-		return true;
+    private boolean isPrime(int num) {
+        return false;
     }
 }

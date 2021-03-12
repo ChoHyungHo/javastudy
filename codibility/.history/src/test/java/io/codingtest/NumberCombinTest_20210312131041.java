@@ -15,13 +15,4 @@ public class NumberCombinTest {
         // actual = expected;
         assertEquals(expected, actual);
     }
-
-    @Test
-    public void Test2(){
-        String numbers = "011";
-        int actual = solution.solution(numbers);
-        int expected = 2;
-        // actual = expected;
-        assertEquals(expected, actual);
-    }
 }
