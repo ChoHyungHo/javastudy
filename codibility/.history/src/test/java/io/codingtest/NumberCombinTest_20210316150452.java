@@ -31,12 +31,4 @@ public class NumberCombinTest {
         int expected = 5;
         assertEquals(expected, actual);
     }
-
-    @Test
-    public void Test4(){
-        String numbers = "5131";
-        int actual = solution.solution(numbers);
-        int expected = 14;
-        assertEquals(expected, actual);
-    }
 }

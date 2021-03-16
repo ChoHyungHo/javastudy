@@ -36,7 +36,7 @@ public class NumberCombinTest {
     public void Test4(){
         String numbers = "5131";
         int actual = solution.solution(numbers);
-        int expected = 14;
+        int expected = 5;
         assertEquals(expected, actual);
     }
 }

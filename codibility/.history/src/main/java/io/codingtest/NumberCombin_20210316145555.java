@@ -7,41 +7,19 @@ public class NumberCombin {
     private int count;
 
     public int solution(String numbers) {
-        // int size = numbers.length();
+        int size = numbers.length();
 
-        // List<Character> arr = new ArrayList<Character>();
-        // for (int i = 0; i < size; i++) {
-        //     arr.add(numbers.charAt(i));
-        // }
-
-        // List<Character> result = new ArrayList<Character>();
-        // for (int i = 0; i < size; i++) {
-        //     permutation(arr, result, size, i + 1);
-        // }
-
-        // return count;
-        HashSet<Integer> set = new HashSet<>();
-        permutation("", numbers, set);
-        int count = 0;
-        while(set.iterator().hasNext()){
-            int a = set.iterator().next();
-            set.remove(a);
-            if(a==2) count++;
-            if(a%2!=0 && isPrime(a)){
-                count++;
-            }
-        }        
-        return count;
-    }
-
-    public void permutation(String prefix, String str, HashSet<Integer> set) {
-        int n = str.length();
-        if(!prefix.equals("")) {
-            set.add(Integer.valueOf(prefix));
+        List<Character> arr = new ArrayList<Character>();
+        for (int i = 0; i < size; i++) {
+            arr.add(numbers.charAt(i));
         }
-        for (int i = 0; i < n; i++)
-          permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n), set);
 
+        List<Character> result = new ArrayList<Character>();
+        for (int i = 0; i < size; i++) {
+            permutation(arr, result, size, i + 1);
+        }
+
+        return count;
     }
 
     private void permutation(List<Character> arr, List<Character> result, int arrSize, int remainedLength) {
